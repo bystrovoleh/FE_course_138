@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            display: grid;
+        }
+        .label{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form class="form">
+                <label class="label"> Full name
+                    <input type="text">
+                </label>
+
+                <label class="label"> Email
+                    <input type="text" id="Email">
+                </label>
+
+                <label class="label"> Password
+                    <input type="text">
+                </label>
+
+                <label class="label"> Password confirmation
+                    <input type="text">
+                </label>
+
+                <label class="label"> Sex
+                    <input type="radio" name="Sex" value="Man">Man
+                    <input type="radio" name="Sex" value="Woman"> Woman
+                </label>
+
+                <label class="label"> Age
+                    <input type="text">
+                </label>
+
+                <div class="select label">
+                    <label class="label"> Course
+                        <select>
+                            <option>Select your course</option>
+                            <option>Front-End</option>
+                            <option>Back-End</option>
+                            <option>Project Management</option>
+                            <option>QA Manual</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="label"> Full address
+                    <textarea placeholder="Country, region, city, street"></textarea>
+                </label>
+
+                <label class="label">
+                    <input type="checkbox"> I accept personal usage
+                </label>
+
+                <label class="label">
+                    <input type="submit" value="Clear">
+                    <input type="submit" value="Register">
+                </label>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
