@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.body{
+    width: 1400px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: F2F2F2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 1126px;
+    max-width: 100%;
+}
+
+.header-container{
+    height: 78px;
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 320px; 
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #2F281E;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-left: 54px;
+}
+
+.sign-in{
+    text-decoration: none;
+    color: black;
+    border: 1px solid #BCD0E5;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sign-up {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.first-container{
+    padding-top: 82px;
+}
+
+.first-image{
+    padding-top: 30px;
+}
+
+.start-button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+.video-button {
+    color: #FF9900;
+    padding-top: 45px;
+}
+
+.video-button{
+    padding-top: 45px;
+    /* margin-left: 30px; */
+}
+
+.text{
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.trianlge{
+    margin-left: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: 3px
+}

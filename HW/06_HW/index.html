@@ -5,45 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .form{
+        .form__item{
             display: grid;
+            grid-template-columns: 100px 200px;
         }
-        .label{
+
+        input{
             margin-bottom: 10px;
+        }
+
+        textarea{
+            margin-top: 5px; 
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <form class="form">
-                <label class="label"> Full name
-                    <input type="text">
-                </label>
 
-                <label class="label"> Email
-                    <input type="text" id="Email">
-                </label>
+        <section class="form-section">
 
-                <label class="label"> Password
-                    <input type="text">
-                </label>
+            <div class="container">
 
-                <label class="label"> Password confirmation
-                    <input type="text">
-                </label>
+                <form class="form">
 
-                <label class="label"> Sex
-                    <input type="radio" name="Sex" value="Man">Man
-                    <input type="radio" name="Sex" value="Woman"> Woman
-                </label>
+                    <div class="form__item">
+                        <label for="inp01">Full name</label>
+                        <input id="inp01" type="text" placeholder="John Doe" required>
+                    </div>
 
-                <label class="label"> Age
-                    <input type="text">
-                </label>
+                    <div class="form__item">
+                        <label for="inp02">Email</label>
+                        <input id="inp02" type="email" placeholder="example@gmail.com" required>
+                    </div>
+    
+                    <div class="form__item">
+                        <label for="inp03">Password</label>
+                        <input id="inp03" type="password" placeholder="Password" required>
+                    </div>
 
-                <div class="select label">
-                    <label class="label"> Course
+                    <div class="form__item">
+                        <label for="inp04">Password confirmation</label>
+                        <input id="inp04" type="password" placeholder="Password" required>
+                    </div>
+
+                    <div class="form__radio"> Sex
+                        <input id="radio01" type="radio" name="gen" value="Man" required checked>
+                        <label for="radio01">Man</label>
+                        <input id="radio02" type="radio" name="gen" value="Woman" required>
+                        <label for="radio02">Woman</label>
+                    </div>
+
+                    <div class="form__item">
+                        <label for="inp05">Age</label>
+                        <input id="inp05" type="text" placeholder="Age" required>
+                    </div>
+
+                    <div class="form__item">
+                        <label>Course</label>
                         <select>
                             <option>Select your course</option>
                             <option>Front-End</option>
@@ -51,24 +69,30 @@
                             <option>Project Management</option>
                             <option>QA Manual</option>
                         </select>
+                    </div>
+
+                    <div class="form__item">
+                        <label for="textAr01">Address</label>
+                        <textarea placeholder="Country, region, city, street" id="textAr01"></textarea>
+                    </div>
+
+                    <div class="form__checkbox">
+                        <input id="check01" type="checkbox" name="TermsConditions" required>
+                        <label for="check01">I accept personal usage</label>
+                    </div>
+    
+                    <label class="label">
+                        <input type="submit" value="Clear">
+                        <input type="submit" value="Register">
                     </label>
-                </div>
+    
+                </form>
+                
+            </div>
 
-                <label class="label"> Full address
-                    <textarea placeholder="Country, region, city, street"></textarea>
-                </label>
+        </section>
 
-                <label class="label">
-                    <input type="checkbox"> I accept personal usage
-                </label>
-
-                <label class="label">
-                    <input type="submit" value="Clear">
-                    <input type="submit" value="Register">
-                </label>
-
-            </form>
-        </div>
     </div>
+
 </body>
 </html>
