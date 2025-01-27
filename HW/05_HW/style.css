@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 .body{
-    width: 1400px;
+    /* width: 1400px; */
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -120,4 +120,102 @@
     margin-right: 5px;
     position: relative;
     top: 3px
+}
+
+.second-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.articles-block{
+    display: flex;
+    justify-content: center;
+}
+
+.art{
+    width: 240px;
+    height: 178px;
+}
+
+.head3{
+    font-size: 22px;
+}
+
+.icon-img{
+    width: 50px;
+    height: 50px;
+}
+
+.second-img{
+    margin-left: 30px;
+}
+
+.text{
+    font-size: 16px;
+}
+
+.cta{
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid #FF9900;
+    background-color: #FF9900;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.left-cont{
+    width: 486px;
+    height: 531px;
+}
+
+.third-container{
+    display: flex;
+
+}
+
+.fourth-container{
+    display: flex;
+    margin-top: 101px;
+
+}
+
+.four-art{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.fifth-container{
+    margin-top: 101px;
+    display: flex;
+}
+
+.par-text {
+    margin-left: 10px;
+}
+
+.art-left{
+    margin-left: 20px; 
+}
+
+hr {
+    border: none;
+    height: 1px; 
+    background-color: #ccc;
+    margin: 20px 0px; 
+}
+
+.foot-container{
+    margin-top: 150px;
+    height: 308px;
 }
