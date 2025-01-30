@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset css start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans'
+}
+
+img {
+    width: 100%;
+}
+
+/* Reset css end */
+
+.container  {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+/* Header start */
+
+.header__nav{
+    border-bottom: 1px solid #828282;
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header__link {
+    color: #828282;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* Header end */
+
+/* Hero start */
+
+.title {
+    padding-top: 12px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+/* Hero end */
+
+/* Second section start */
+
+.about-me {
+    background-color: rgb(246, 246, 246);
+}
+
+.about-me__h2, .portfolio__h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.about-me__div{
+    padding-bottom: 70px;
+}
+
+.about-me__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/* Second section end */
+
+/* Third section start */
+
+.skills__h2 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.skills__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;  
+    padding-bottom: 50px;
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.article__img {
+    width: 80px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 46px;
+}
+
+.fig{
+    width: 53px;
+}
+
+.figma{
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+    margin-bottom: 80px;
+}
+
+.article__text {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+    margin-bottom: 60px;
+}
+
+.rate__img {
+    width: 170px;
+}
+
+
+/* Third section end */
+
+/* Fourth section start */
+
+.portfolio{
+    background-color: rgb(246, 246, 246);
+}
+
+.portfolio__text {
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    color: #828282;
+    margin-top: 40px;
+    padding-bottom: 70px;
+}
+
+/* Fourth section end */

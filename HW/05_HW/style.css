@@ -161,7 +161,7 @@
     justify-content: center;
 }
 
-.cta-button {
+.cta-button, .foot-btn {
     text-decoration: none;
     color: white;
     border: 1px solid #FF9900;
@@ -213,9 +213,25 @@ hr {
     height: 1px; 
     background-color: #ccc;
     margin: 20px 0px; 
+    margin-top: 150px;
 }
 
 .foot-container{
-    margin-top: 150px;
     height: 308px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-foot{
+    display: contents;
+}
+
+.foot-btn {
+    width: 131px;
+    height: 39px;
+}
+
+.foot-input {
+    width: 325px;
+    height: 28px;
 }
