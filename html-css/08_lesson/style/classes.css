@@ -1,0 +1,42 @@
+.btn {
+    padding: 5px 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgba(255, 136, 0, 0.658);
+}
+
+.btn:active {
+    color: black;
+    background-color: rgba(251, 0, 255, 0.658); 
+}
+
+/* через 1 */
+/* .list__item:nth-child(2n) {
+    background-color: blue;
+} */
+
+/* конкретный номер */
+/* .list__item:nth-child(2) {
+    background-color: blue;
+} */
+
+.list__item:last-child {
+    background-color: blue;
+}
+
+.list__item:first-child {
+    background-color: blue;
+}
+
+
+

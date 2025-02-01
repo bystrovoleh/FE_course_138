@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.btn {
+    width: 160px;
+    height: 42px;
+    background-color: rgba(6, 178, 95, 1);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    transition: all 0.5s;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(5, 149, 79);
+}
+
+.btn:active {
+    background-color: rgb(5, 141, 75); 
+}
+
+.secondary {
+    width: 160px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid rgba(6, 178, 95, 1);
+    color: rgba(6, 178, 95, 1);
+    border-radius: 6px;
+    transition: all 0.5s;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.secondary:hover {
+    background-color: rgbargb(5, 149, 79);
+    color: white;
+    border: none;
+}
+
+.secondary:active {
+    background-color: rgba(5, 141, 75); 
+    color: white;
+    border: none;
+}

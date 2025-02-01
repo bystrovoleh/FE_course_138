@@ -1,0 +1,23 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pseudo elements */
+
+.title::before {
+    content: '😃';
+}
+
+.title::after {
+    content: '😃';
+}
+
+.title-2::after {
+    display: block;
+    content: '';
+    width: 120px;
+    height: 3px;
+    background-color: red ;
+}

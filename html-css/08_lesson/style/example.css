@@ -1,0 +1,44 @@
+:root {
+    --color-grey: #f6f6f6;
+    --color-black: #070707;
+}
+
+/* var(--color-black) - это добавляется в значение*/
+
+
+
+
+
+.title-2::after {
+    display: block;
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: var(--color-black) ;
+    transition: width 0.5s;
+}
+
+.title-2:hover::after {
+    width: 300px;
+}
+
+.box__btn::after {
+    content: '👇🏼';
+
+}
+
+.box__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.box:hover .box__btn::after {
+    content: '👆🏼';
+
+}
+
+.box:hover .box__content {
+    max-height: 1000px
+    
+}
