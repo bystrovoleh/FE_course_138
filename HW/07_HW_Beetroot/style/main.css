@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 793px;
+    background-color: rgba(59, 63, 69, 1);
+}
+
+.header {
+    background-color: rgba(74, 79, 86, 1);
+}
+
+.title {
+    color: rgba(255, 137, 132, 1);
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 19px;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    font-family: 'Roboto';
+}
+
+.head {
+    color: rgba(255, 137, 132, 1);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+.main {
+    width: 793px;
+    padding-top: 12px;
+    padding-bottom: 45px;
+}
+
+.table {
+    width: 543px;
+    margin: 0 auto;
+}
+
+.block {
+    background-color: rgba(136, 131, 158, 1);
+    display: flex;
+    gap: 16px;
+    padding: 12px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.block:nth-child(2n) {
+    background-color: rgba(122, 117, 147, 1);
+}
+
+.block:hover {
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: rgba(98, 94, 119, 1);
+}
+
+.block:active{
+    background-color: rgba(255, 137, 132, 1);
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+    transform: scale(1);
+}
+
+.block:has(.check:checked) {
+    text-decoration: line-through;
+    text-decoration-color: rgba(155, 150, 172, 1);
+}
+
+.check:checked + .text{
+    color: rgba(155, 150, 172, 1);;
+}
+
+.footer{
+    padding-bottom: 45px;
+}
+
+
+.footer_conatiner {
+    background-color: rgba(74, 79, 86, 1);
+    width: 534px;
+    margin: 0 auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.foot-title {
+    color: rgba(255, 137, 132, 1);
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+
+
+  
+
+  

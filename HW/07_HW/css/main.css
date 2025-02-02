@@ -20,6 +20,35 @@ img {
     margin: 0 auto;
 }
 
+.h2_title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    /* padding-top: 100px;
+    padding-bottom: 50px; */
+    text-align: center;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.skills{
+    padding-bottom: 30px;
+}
+
+.skills_text {
+    padding-bottom: 50px;
+}
+
+.about, .portfolio {
+    padding-bottom: 50px;
+}
+
 /* Header start */
 
 .header__nav{
@@ -41,9 +70,18 @@ img {
     font-size: 18px;
     font-weight: 400;
     line-height: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
+.header__link:hover {
+    font-weight: 700;
+    color: black;
+}
+
+
 /* Header end */
+
 
 /* Hero start */
 
@@ -57,59 +95,28 @@ img {
 
 /* Hero end */
 
+
 /* Second section start */
 
-.about-me {
+.about-me_sec {
     background-color: rgb(246, 246, 246);
-}
-
-.about-me__h2, .portfolio__h2 {
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
     padding-top: 100px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.about-me__div{
     padding-bottom: 70px;
 }
 
-.about-me__text{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-
 /* Second section end */
+
 
 /* Third section start */
 
-.skills__h2 {
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 46px;
+.skills_sec {
     padding-top: 100px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.skills__text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;  
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .articles-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
 }
 
 .article__img {
@@ -145,21 +152,18 @@ img {
     width: 170px;
 }
 
-
 /* Third section end */
+
 
 /* Fourth section start */
 
-.portfolio{
+.portfolio_sec{
     background-color: rgb(246, 246, 246);
+    padding-top: 100px;
 }
 
-.portfolio__text {
+.portfolio_t {
     text-decoration: underline;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-    line-height: 25px;
     color: #828282;
     margin-top: 40px;
     padding-bottom: 70px;
