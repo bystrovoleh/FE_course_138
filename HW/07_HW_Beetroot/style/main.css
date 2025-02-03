@@ -115,6 +115,10 @@
     text-align: center;
 }
 
+.foot-title::after {
+    content: ' :)';
+}
+
 
   
 
