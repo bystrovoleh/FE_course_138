@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mada:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mada:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --color-title: rgba(32, 81, 155, 1);
+    --color-btn: rgba(32, 81, 155, 1);
+    --color-white: #ffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+}
+
+.container{
+    max-width: 1143px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.button {
+    background-color: var(--color-btn) ;
+    padding: 10px 34px 10px 34px;
+    border: none;
+    border-radius:30px ;
+    color: var(--color-white);
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.hero{
+    padding: 50px 0;
+}
+
+.hero__container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.hero__content{
+    padding-top: 61px;
+}
+
+.hero__title{
+    width: 541px;
+    font-family: Mada;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 77px;
+    letter-spacing: 0%;
+    color: var(--color-title);
+    margin-bottom: 60px;
+}

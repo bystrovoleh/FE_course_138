@@ -2,7 +2,6 @@
     --width-full: 100%;
     --width-half: 50%;
     --width-half-half: 25%;
-
 }
 
 *{
@@ -61,19 +60,19 @@ body {
     font-size: 0;
 }
 
-.list-container li {
+.list-item {
     display: inline-block;
     font-size: 22px;
     line-height: 26px;
-    border: 1px solid white;
+    border: 4px solid transparent;
     padding: 27px;
     cursor: pointer;
     opacity: 80%;
-    transition: border, opacity 0.3s;
+    transition: all 0.2s;
 }
 
 .list-container li:hover {
-    border: 3px solid white;
+    border: 2px solid white;
     opacity: 100%;
 }
 
@@ -82,6 +81,10 @@ body {
     font-size: 16px;
     line-height: 19px;
     padding: 35px 0 65px 0;
+}
+
+.lisb, .par, .bel, .ven, .tel, .cai, .ny, .nd, .sf, .tok, .syd {
+    border: 2px solid white;
 }
 
 .lisb {
