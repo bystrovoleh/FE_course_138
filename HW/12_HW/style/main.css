@@ -1,9 +1,4 @@
-:root {
-    --width-small: 370px;
-    --width-big: 770px;
-    --height-main: 370px;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -11,34 +6,254 @@
     box-sizing: border-box;
 }
 
-/* .fs {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows: 50% 50% 50%;
-    gap: 15px;
-    width: 80%;
-    max-width: 1000px;
-}
-.photo-card img {
+.container{
+    max-width: 1170px;
     width: 100%;
-    display: block;
-    border-radius: 10px;
+    margin: 0 auto;
 }
 
-.small img{
-    width: var(--width-small);
-    height: var(--height-main);
+.title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45.07px;
+    letter-spacing: 5%;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
-.big img{
-    width: var(--width-big);
-    height: var(--height-main);
+.item {
+    cursor: pointer;
+    transition: box-shadow 0.5s, transform 0.5s;
 }
+
+.item:hover {
+    box-shadow: 0 0 30px 0 #00000080;
+    transform: scale(1.02);
+}
+
+/* ------------------------------------------------------------- */
+
+.arch{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 370px);
+    gap: 30px;
+
+    margin-bottom: 120px;
+}
+
+.arch__item{
+    background-color: red;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.arch__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.text{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: white;
+}
+
+.text_p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+
+.arch__item--1{
+    background-image: url(../img/fr.png);
+    background-size: cover;
+}
+
+.arch__item--2{
+    background-image: url(../img/sc.png);
+    background-size: cover;
+    grid-column: 2 / 4;
+}
+
+.arch__item--3{
+    background-image: url(../img/th.png);
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+
+.arch__item--4{
+    background-image: url(../img/fo.png);
+    background-size: cover;
+    grid-column: 3 / 4;
+}
+
+.arch__item--5{
+    background-image: url(../img/fi.png);
+    background-size: cover;
+    grid-column: 1 / 2;
+}
+
+.arch__item--6{
+    background-image: url(../img/si.png);
+    background-size: cover;
+    grid-column: 2 / 4;
+}
+
+/* ------------------------------------------------------------- */
+
+.life{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 370px);
+    gap: 30px;
+
+    margin-bottom: 120px;
+}
+
+.life__item{
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.life__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.life__item--1{
+    background-image: url(../img/life/first.png);
+    background-size: cover;
+}
+
+.life__item--2{
+    background-image: url(../img/life/sec.png);
+    background-size: cover;
+    grid-column: 2 / 4;
+}
+
+.life__item--3{
+    background-image: url(../img/life/thir.png);
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.life__row--3{
+    position: relative;
+    left: 4px;
+}
+
+.life__item--4{
+    background-image: url(../img/life/fou.png);
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.life__item--5{
+    background-image: url(../img/life/fif.png);
+    background-size: cover;
+    grid-column: 1 / 2;
+}
+
+.life__item--6{
+    background-image: url(../img/life/six.png);
+    background-size: cover;
+    grid-column: 2 / 4;
+}
+
+
+/* ------------------------------------------------------------- */
+
+.portrait{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 370px);
+    gap: 30px;
+
+    margin-bottom: 120px;
+}
+
+.portrait__item{
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.portrait__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.portrait__item--1{
+    background-image: url(../img/portrait/1.png);
+    background-size: cover;
+}
+
+.portrait__item--2{
+    background-image: url(../img/portrait/2.png);
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.portrait__item--3{
+    background-image: url(../img/portrait/3.png);
+    background-size: cover;
+}
+
+.portrait__item--4{
+    background-image: url(../img/portrait/4.png);
+    background-size: cover;
+}
+
+.portrait__item--5{
+    background-image: url(../img/portrait/5.png);
+    background-size: cover;
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+
+.portrait__item--6{
+    background-image: url(../img/portrait/6.png);
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+
+.portrait__item--7{
+    background-image: url(../img/portrait/7.png);
+    background-size: cover;
+}
+
+.portrait__item--8{
+    background-image: url(../img/portrait/8.png);
+    background-size: cover;
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+}
+
+.portrait__item--9{
+    background-image: url(../img/portrait/9.png);
+    background-size: cover;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+}
+
+.portrait__item--10{
+    background-image: url(../img/portrait/10.png);
+    background-size: cover;
+}
+
+

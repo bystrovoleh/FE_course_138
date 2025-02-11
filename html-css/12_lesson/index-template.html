@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+
+
+    <style>
+
+        /* Flex box */
+        .box{
+            height: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+
+        .flex{
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flex .box {
+            width: 100%;
+        }
+
+        .flex .box:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Grid */
+
+        .grid{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(6, 1fr)
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Flex box</h2>
+        <section class="flex">
+            <div class="box">
+                <h1>test</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, sint.</p>
+            </div>
+            <div class="box"></div>
+        </section>
+
+        <h2>Grid</h2>
+        <section class="grid">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </section>
+    </div>
+</body>
+</html>

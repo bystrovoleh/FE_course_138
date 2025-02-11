@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    .box, .box_v2, .box_v3{
+        height: 100px;
+        background-color: aquamarine;
+        border: 1px solid black;
+
+        /* заполнить свободное место */
+        /* flex-grow: 1; */
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    /* Flex grow */
+
+    .box__1 {
+        background-color: bisque;
+    }
+
+    .box__2{
+        flex-grow: 1;
+    }
+
+    /* Flex shrink */
+
+    .box__3{
+        width: 100px;
+
+        /* запретить уменьшаться/ аналог min-width */
+        flex-shrink: 0;
+    }
+
+    /* Flex basis */
+
+    .box_v3 {
+        /* размер по основной оси */
+        flex-basis: 50%;
+
+    }
+
+    .flex-basis{
+        flex-direction: row;
+    }
+
+    
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Flex box</h2>
+
+        <h2>Flex grow</h2>
+        <section class="flex">
+            <div class="box box__1">1</div>
+            <div class="box box__2">2</div>
+        </section>
+
+        <h2>Flex shrink</h2>
+        <section class="flex">
+            <div class="box_v2 box__3">
+                <img src="./image.png" alt="" width="100%">
+            </div>
+            <div class="box_v2 box__4">2112312312</div>
+        </section>
+
+        <h2>Flex basis</h2>
+        <section class="flex flex-basis">
+            <div class="box_v3 box__5">1</div>
+            <div class="box_v3 box__6">2112312312</div>
+        </section>
+    </div>
+</body>
+</html>
