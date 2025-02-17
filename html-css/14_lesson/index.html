@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .position{
+            
+            position: static;
+
+
+            /* ничего не делает, только начинает работать top left right bottom */
+            position: relative;
+
+            /* позиционируется относительно окна браузера */
+            position: fixed;
+
+            /* позиционируется относительно родительского элемента с позишеном  */
+            position: absolute;
+
+            /* прилипает */
+            position: sticky;
+        }
+
+        .row{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+
+        .box{
+
+            position: absolute;
+            right: 0;
+            top: 0;
+    
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .box--2{
+            top: 100px;
+            right: 100px; 
+            background-color: blueviolet;
+            z-index: 1;
+        }
+
+        .box--3{
+            top: 50px;
+            right: 50px;
+            background-color: bisque;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="box"></div>
+            <div class="box box--2"></div>
+            <div class="box box--3"></div>
+        </div>
+    </div>
+</body>
+</html>
