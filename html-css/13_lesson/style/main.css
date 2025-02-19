@@ -26,6 +26,7 @@ body {
     color: var(--color-white);
     font-size: 16px;
     line-height: 31px;
+    width: 100%;
 }
 
 .container{
@@ -98,6 +99,9 @@ body {
     gap: 30px;
 }
 
+.hero__img{
+    position: relative;
+}
 
 .hero__info_row:first-of-type {
     margin-bottom: 42px;
@@ -119,7 +123,7 @@ body {
 
 .img{
     position: absolute;
-    top: 71px
+    top: -149px
 }
 
 .hero__circle{
@@ -128,8 +132,9 @@ body {
     border-radius: 50%;
     background-color: var(--color-circle);
     filter: blur(300px);
-    position: relative;
-    left: 170px;
+    position: absolute;
+    top: -15%;
+    left: 100%;
 }
 
 /* --------------------------------About-------------------------------------- */
@@ -475,4 +480,21 @@ body {
     width: 10px;
     height: 10px;
     background-color: var(--color-yellow);
+}
+
+
+
+
+@media (max-width: 1030px) {
+    .img {
+        max-width: 640px;
+        top: -200px;
+    }
+}
+
+@media (max-width: 991px) {
+    .img {
+        max-width: 640px;
+        top: 2;
+    }
 }
