@@ -470,31 +470,10 @@ body {
     display: none;
 }
 
-.education__main:hover + .education__item{
+.inp-01, .inp-02, .inp-03, .inp-04, .inp-05, .inp-06, .inp-07{
+    display: none;
+}
+
+.inp-01:checked + .education__item, .inp-02:checked + .education__item, .inp-03:checked + .education__item, .inp-04:checked + .education__item, .inp-05:checked + .education__item, .inp-06:checked + .education__item, .inp-07:checked + .education__item {
     display: block;
-}
-
-.education__p::before{
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: var(--color-yellow);
-}
-
-
-
-
-@media (max-width: 1030px) {
-    .img {
-        max-width: 640px;
-        top: -200px;
-    }
-}
-
-@media (max-width: 991px) {
-    .img {
-        max-width: 640px;
-        top: 2;
-    }
 }
