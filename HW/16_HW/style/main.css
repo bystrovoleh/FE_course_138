@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-border: rgba(239, 238, 243, 1);
+    --color-sub: rgba(118, 144, 168, 1);
+    --color-border: rgba(21, 101, 216, 0.1);
+    --color-green: rgba(61, 179, 112, 1);
+    --color-item-border: rgba(229, 234, 244, 1);
+    --color-footer: rgba(22, 19, 61, 1);
+
+    --color-svg-main: rgba(82, 194, 157, 1);
+    --color-second: rgba(225, 244, 245, 1);
+    --color-third: rgba(244, 254, 255, 1);
+    --color-fourth: rgba(202, 239, 242, 1);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    border-bottom: 1px solid var(--color-border);
+}   
+
+.footer{
+    background-color: var(--color-footer);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main__container{
+    padding: 100px 0;
+}
+
+.logo__img{
+    padding: 23px 0;
+}
+
+.sub{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: var(--color-sub);
+    margin-bottom: 15px;
+}
+
+.title{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    margin-bottom: 40px;
+}
+
+.sub-title{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21.28px;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+}
+
+.sub-p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;     
+    margin-bottom: 30px;
+}
+
+.sub__sub-p{
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18.75px;
+    letter-spacing: 0%;
+    color: var(--color-green);
+}
+
+.container__row{
+    display: flex;
+    gap: 30px;
+}
+
+.container__item{
+    border: 1px solid var(--color-item-border);
+    border-radius: 8px;
+}
+
+.container__item:hover{
+    border: 1px solid var(--color-green)
+}
+
+.container__item:hover .color--1{
+    fill: var(--color-svg-main);
+}
+
+.container__item:hover .color--2{
+    fill: var(--color-second);
+}
+
+.container__item:hover .color--3{
+    fill: var(--color-third);
+}
+
+.container__item:hover .color--4{
+    fill: var(--color-fourth);
+}
+
+.content{
+    padding: 40px;
+}
+
+.vector__item{
+    border: 1px solid var(--color-border);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.footer__container{
+    padding: 40px 0;
+}
+
+.footer__logo{
+    margin-bottom: 40px;
+}
+
+.contacts{
+    display: flex;
+    gap: 10px;
+}
+
+.contact__item:hover .icon{
+    fill: var(--color-green);
+}
