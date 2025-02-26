@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.container {
+  max-width: 570px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  padding-top: 35px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  margin-bottom: 20px;
+  transform: translateX(-78%);
+}
+
+.label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: rgb(84, 84, 84);
+}
+
+.input {
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid rgb(228, 228, 228);
+  color: rgb(84, 84, 84);
+  background-color: transparent;
+  appearance: none;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form input:focus, .form select:focus {
+  border-color: rgb(0, 123, 255);
+  outline: none;
+}
+.form__name {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.form__name-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form__name-item .name {
+  width: 245px;
+  height: 38px;
+}
+.form__email {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form__email .email {
+  width: 500px;
+  height: 38px;
+}
+.form__email .span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: rgb(150, 150, 150);
+  margin-bottom: 20px;
+}
+.form__radio {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 20px;
+  transform: translateX(-100%);
+}
+.form__radio .radio {
+  display: none;
+}
+.form__radio .custom__radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.form__radio .custom__radio-sub {
+  position: absolute;
+  top: 27%;
+  left: 27%;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+}
+.form__radio .radio:checked + .custom__radio {
+  background-color: rgb(0, 123, 255);
+  border: 1px solid rgb(0, 123, 255);
+}
+.form__radio .radio:checked + .custom__radio > .custom__radio-sub {
+  display: block;
+}
+.form__radio .label__radio {
+  display: flex;
+}
+.form__radio .label__radio:first-of-type {
+  margin-right: 21px;
+}
+.form__address {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.form__address-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form__address-item .address {
+  background-color: transparent;
+  width: 245px;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid rgb(228, 228, 228);
+  padding: 0 10px;
+  color: rgb(84, 84, 84);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: rgb(84, 84, 84);
+  appearance: none;
+}
+.form__address-item .arrow {
+  position: absolute;
+  right: 52%;
+  top: 58%;
+  width: 18px;
+  height: 18px;
+  z-index: -1;
+}
+.form .btn {
+  width: 500px;
+  height: 38px;
+  background-color: rgb(0, 123, 255);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 22px;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  text-align: center;
+}
+.form .sub-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: rgb(150, 150, 150);
+  max-width: 397px;
+  margin-bottom: 41px;
+}
+.form .sub-text span {
+  color: rgb(0, 123, 255);
+  cursor: pointer;
+}
+.form .divider {
+  position: absolute;
+  bottom: 8%;
+  width: 500px;
+  height: 1px;
+  background-color: rgb(228, 228, 228);
+}
+.form .bottom {
+  display: flex;
+  gap: 20px;
+}
+.form .bottom-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  text-align: right;
+  color: rgb(84, 84, 84);
+}
+.form .bottom span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: rgb(0, 123, 255);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

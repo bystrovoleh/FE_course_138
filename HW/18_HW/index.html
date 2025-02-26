@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Create an Account</h1>
+
+            <form action="" class="form">
+                <div class="form__name">
+                    <div class="form__name-item">
+                        <label for="name01" class="label label__name">First name</label>
+                        <input type="text" class="input name" id="name01">
+                    </div>
+    
+                    <div class="form__name-item">
+                        <label for="name02" class="label label__name">Last name</label>
+                        <input type="text" class="input name" id="name02">
+                    </div>
+                </div>
+
+                <div class="form__email">
+                    <label for="email01" class="label label__email">Email</label>
+                    <input type="email" class="input email" id="email01">
+                    <span class="span">We'll never share your email with anyone else.</span>
+                </div>
+
+                <div class="form__radio">
+                    <label for="radio01" class="label label__radio">
+                        <input type="radio" class="radio" name="group1" id="radio01">
+                        <div class="custom__radio">
+                            <div class="custom__radio-sub"></div>
+                        </div>
+                    Male</label>
+
+                    <label for="radio02" class="label label__radio">
+                        <input type="radio" class="radio" name="group1" id="radio02">
+                        <div class="custom__radio">
+                            <div class="custom__radio-sub"></div>
+                        </div>
+                    Female</label>
+
+                </div>
+
+                <div class="form__address">
+                    <div class="form__address-item">
+                        <label for="address01" class="label label__address">Country</label>
+                        <select name="" class="address" id="address01">
+                            <option value="" class="option" selected>Select</option>
+                            <option value="" class="option">Ukraine</option>
+                            <option value="" class="option">Poland</option>
+                        </select>
+
+                        <img src="./img/Arrow.svg" alt="" class="arrow">
+                    </div>
+
+                    <div class="form__address-item">
+                        <label for="address02" class="label label__address">City</label>
+                        <input type="text" class="input address" id="address02">
+                    </div>
+                </div>
+
+                <button class="btn">Sign up</button>
+                <p class="sub-text">By clicking the 'Sign Up' button, you confirm that you accept our <span>Terms of Use</span> and <span>Privacy Policy</span></p>
+
+                <div class="divider"></div>
+
+                <div class="bottom">
+                    <p class="bottom-text">Have an account?</p>
+                    <span>Log In</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
