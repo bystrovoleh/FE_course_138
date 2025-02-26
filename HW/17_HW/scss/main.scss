@@ -1,0 +1,152 @@
+@use './variables/color-variables' as *;
+@use './variables/font-variables' as *;
+
+// $roboto-font: Roboto;
+// $raleway-font: Raleway;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+
+    .bottom-section{
+        padding: 0 65px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &--top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    &--left{
+    }
+
+    .divider{
+        width: 1px;
+        height: 560px;
+        background-color: $title;
+    }
+
+    &--right{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 430px;
+
+        .h2{
+            position: relative;
+            font-family: $roboto-font;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42.19px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $grey-200;
+            margin-bottom: 55px;
+        }
+
+        .h2::after{
+            position: absolute;
+            bottom: -62%;
+            left: 30%;
+            content: '';
+            width: 100px;
+            height: 1px;
+            background-color: $title;
+            display: block;
+        }
+
+        .sub-title{
+            font-family: $raleway-font;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $grey-200;
+            margin-bottom: 30px;
+        }
+
+        .links__container{
+            margin-bottom: 35px;
+
+            .link__img{
+                cursor: pointer;
+            }
+        }
+
+        .text{
+            font-family: $raleway-font;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $black;
+            margin-bottom: 49px;
+        }
+
+        .decore{
+            position: absolute;
+            bottom: 11%;
+        }
+
+        .btn{
+            background-color: transparent;
+            width: 118px;
+            height: 24px;
+            border: 1px solid $title;
+
+            font-family: $roboto-font;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 14px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $grey-200;
+            cursor: pointer;
+
+        }
+
+    }
+}
+
+.title{
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 66px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: $title;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+
+.sub-text{
+    font-family: $raleway-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $grey-100;
+    margin-bottom: 15px;
+}
