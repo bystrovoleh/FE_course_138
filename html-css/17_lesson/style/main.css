@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --color-red: blue;
+  --color-button: rgba(247, 141, 46, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: bisque;
+  margin: 10px;
+}
+.btn:hover {
+  color: red;
+}
+.btn--sec:hover {
+  background-color: aqua;
+}
+
+.button {
+  font-family: Montserrat;
+  background-color: var(--color-button);
+  border-radius: 8px;
+  width: 176px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: white;
+  border: none;
+  margin: 30px;
+}
+.button:hover {
+  background-color: transparent;
+  border: 1px solid var(--color-button);
+  color: var(--color-button);
+}
+.button:active {
+  background-color: black;
+}
+.button--secondary {
+  font-family: Montserrat;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 176px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--color-button);
+  border: 1px solid var(--color-button);
+}
+.button--secondary:hover {
+  background-color: black;
+}
+.button--secondary:active {
+  background-color: red;
+}
+
+.hero-title {
+  color: aqua;
+}
+.hero-title:hover {
+  color: red;
+}
+@media (max-width: 991px) {
+  .hero-title {
+    color: yellow;
+  }
+}
+.hero-text {
+  color: aquamarine;
+}
+
+.card {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+  color: white;
+}
+
+.footer__item {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+  color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

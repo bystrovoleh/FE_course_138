@@ -1,0 +1,64 @@
+@use '../variables/color-variables';
+@use '../variables/fonts-vars' as *;
+
+.btn {
+    padding: 10px 20px;
+    background-color: bisque;
+    margin: 10px;
+
+    &:hover{
+        color: red;
+    }
+
+    &--sec:hover{
+        background-color: aqua;
+    }
+}
+
+.button{
+    font-family: $font-main;
+    // padding: 24px 40px;
+    background-color: var(--color-button);
+    border-radius: 8px;
+    width: 176px;
+    height: 80px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    color: white;
+    border: none;
+    margin: 30px;
+
+    &:hover{
+        background-color: transparent;
+        border: 1px solid var(--color-button);
+        color: var(--color-button);
+    }
+    &:active{
+        background-color: black;
+    }
+
+    &--secondary{
+        font-family: $font-main;
+        // padding: 24px 40px;
+        background-color: transparent;
+        border-radius: 8px;
+        width: 176px;
+        height: 80px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 32px;
+        color: var(--color-button);
+        border: 1px solid var(--color-button);
+    
+        &:hover{
+            background-color: black;
+        }
+
+        &:active{
+            background-color: red;
+        }
+    
+    }
+
+}

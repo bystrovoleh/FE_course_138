@@ -1,0 +1,34 @@
+@use './variables/color-variables';
+@use './global/main.scss';
+@use './global/buttons.scss';
+@use './variables/media-vars' as *;
+@use './mixins/decoration-bg.scss' as decoration-bg;
+
+
+
+.hero{
+
+    &-title{
+        color: aqua;
+
+        &:hover{
+            color: red;
+        }
+
+        @media (max-width: $tablet) {
+            color: yellow;
+        }
+    }
+
+    &-text{
+        color: aquamarine;
+    }
+}
+
+.card{
+    @include decoration-bg.main(white)
+}
+
+.footer{
+    &__item {@include decoration-bg.main}
+}
