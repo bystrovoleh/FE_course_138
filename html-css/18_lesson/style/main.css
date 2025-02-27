@@ -1,0 +1,121 @@
+:root {
+  --input-text-color: rgba(99, 108, 141, 1);
+  --input-border-color: rgba(152, 169, 195, 1);
+  --input-border-focus-color: rgba(79, 45, 208, 1);
+  --input-checkbox-color: rgba(79, 45, 208, 1);
+}
+
+.input {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: var(--input-text-color);
+}
+.input__hide {
+  display: none;
+}
+.input__item {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--input-border-color);
+  outline: none;
+  color: var(--input-text-color);
+}
+.input__item:focus {
+  border: 1px solid var(--input-border-focus-color);
+  --icon-close-opacity: 1;
+}
+.input__item:focus + .input__label {
+  font-size: 12px;
+  background-color: white;
+  top: -5px;
+  color: var(--input-border-focus-color);
+}
+.input__item:focus ~ .input__icon-close {
+  opacity: 1;
+}
+.input__item--download {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input__label {
+  position: absolute;
+  top: 13px;
+  left: 14px;
+  line-height: 1;
+  color: var(--input-text-color);
+  pointer-events: none;
+  transition: top 0.5s, font-size 0.5s;
+  padding: 0 3px;
+}
+.input__icon-close {
+  opacity: 0;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  cursor: pointer;
+}
+.input__checkbox-item {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--input-checkbox-color);
+  border-radius: 5px;
+}
+.input__checkbox-item img {
+  display: none;
+}
+.input__checkbox-wrapp {
+  display: flex;
+  gap: 10px;
+}
+.input__checkbox {
+  display: none;
+}
+.input__checkbox:checked + .input__checkbox-item img {
+  display: block;
+}
+
+.form {
+  padding: 35px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 10px 3px 100px -36px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+.form__title {
+  margin-bottom: 20px;
+}
+.form__row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.form__row-icon {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  gap: 12px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

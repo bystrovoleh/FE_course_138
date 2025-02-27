@@ -1,0 +1,24 @@
+.form{
+    padding: 35px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 10px 3px 100px -36px rgba(0,0,0,0.75);
+    border-radius: 10px;
+
+    &__title{
+        margin-bottom: 20px;
+    }
+    &__row-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    &__row-icon{
+        display: grid;
+        grid-template-columns: 1fr 60px;
+        gap: 12px;
+    }
+}
