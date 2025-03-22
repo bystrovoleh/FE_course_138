@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <img class="img" src="./img/Group.svg" alt="asdasds">
+
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="">Features</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="">Community</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="">Donate</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="">Help</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="">About</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="btn">Download</button>
+
+                <div class="nav__menu">
+                    <div class="nav__menu-line"></div>
+                    <div class="nav__menu-line"></div>
+                    <div class="nav__menu-line"></div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.nav__menu')
+        const headerNav = document.querySelector('.navigation')
+
+
+        menuButton.onclick = () => {
+            headerNav.classList.toggle('navigation--mobile')
+        }
+    </script>
+</body>
+</html>

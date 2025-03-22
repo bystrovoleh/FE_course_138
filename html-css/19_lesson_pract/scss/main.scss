@@ -1,0 +1,45 @@
+@use './variables/font-variable' as *;
+@use './component/button.scss' as *;
+@use './responsive/header-responsive.scss' as *;
+@use './component/navigation.scss' as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-main);
+}
+
+.header{
+    background-color: rgba(204, 225, 215, 1);
+}
+
+.container{
+    max-width: 1096px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+.nav__menu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+
+    &-line{
+        width: 18px;
+        height: 2px;
+        background-color: black;
+        border-radius: 15px;
+    }
+}
+

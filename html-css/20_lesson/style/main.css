@@ -1,0 +1,97 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    background-color: #000;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* Container styles - Method 1: Flexbox (Recommended) */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Alternative Method 2: Grid (commented out) */
+/*
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+*/
+
+/* Alternative Method 3: Position absolute (commented out) */
+/*
+.container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
+
+/* Planet animation */
+.box {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-image: url('../planet.svg');
+    background-position: center;
+    background-size: cover;
+    -webkit-animation: box-radius 10s infinite;
+            animation: box-radius 10s infinite;
+    will-change: transform;
+}
+
+@-webkit-keyframes box-radius {
+    0% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(15px) rotate(2deg);
+                transform: translateY(15px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+    }
+}
+
+@keyframes box-radius {
+    0% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(15px) rotate(2deg);
+                transform: translateY(15px) rotate(2deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(0) rotate(0deg);
+                transform: translateY(0) rotate(0deg);
+    }
+}

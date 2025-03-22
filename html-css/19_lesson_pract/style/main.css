@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --font-main: Inter;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 133px;
+  height: 52px;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: rgb(0, 108, 53);
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navigation {
+    display: none;
+  }
+  .nav__menu {
+    display: flex !important;
+  }
+  .btn {
+    width: 115px;
+    height: 44px;
+  }
+  .img {
+    width: 137px;
+  }
+}
+.navigation {
+  position: relative;
+}
+.navigation--mobile {
+  position: absolute;
+  width: 100vw;
+  top: 150px;
+  display: flex;
+  background-color: rgb(204, 225, 215);
+  padding: 10px 16px;
+}
+.navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .navigation__list {
+    flex-direction: column;
+  }
+}
+.navigation a {
+  all: unset;
+  cursor: pointer;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+.header {
+  background-color: rgb(204, 225, 215);
+}
+
+.container {
+  max-width: 1096px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 16px;
+}
+
+.nav__menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+}
+.nav__menu-line {
+  width: 18px;
+  height: 2px;
+  background-color: black;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

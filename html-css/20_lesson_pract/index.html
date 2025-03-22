@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;  
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%)
+        }
+
+        .box--first{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+
+            animation: loader 3s infinite;
+        }
+
+        .box--second{
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            /* transform: translate(-50%, -50%); */
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+
+            animation: loader 3s 0.5s infinite;
+        }
+
+        .box--third{
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            /* transform: translate(-50%, -50%); */
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+
+            animation: loader 3s 1s infinite;
+        }
+
+        .box--fourth{
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            /* transform: translate(-50%, -50%); */
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border-radius: 50%;
+
+            animation: loader 3s 1.5s infinite;
+        }
+
+
+        @keyframes loader {
+            0%{
+                transform: translateY(0);
+            } 
+
+            50%{
+                transform: translateY(-20px);
+            } 
+
+            1000%{
+                transform: translateY(0);
+            } 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box box--first"></div>
+            <div class="box box--second"></div>
+            <div class="box box--third"></div>
+            <div class="box box--fourth"></div>
+        </div>
+    </div>
+</body>
+</html>

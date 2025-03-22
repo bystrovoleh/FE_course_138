@@ -1,0 +1,20 @@
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .navigation{
+        display: none;
+    }
+
+    .nav__menu{
+        display: flex !important;
+    }
+
+    .btn{
+        width: 115px;
+        height: 44px;
+    }
+
+    .img{
+        width: 137px;
+    }
+
+}   

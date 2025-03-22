@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <a href="/">
+                    <img class="logo" src="./img/logo.svg" alt="logo" width="196">
+                </a>
+
+                <nav class="header__nav">
+                    <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                            <a href="" class="header__nav--link">Home</a>
+                        </li>
+
+                        <li class="header__nav--item">
+                            <a href="" class="header__nav--link">About</a>
+                        </li>
+
+                        <li class="header__nav--item">
+                            <a href="" class="header__nav--link">Shop</a>
+                            <ul class="header__sub-nav">
+                                <li class="header__nav--item">
+                                    <a href="" class="header__nav--link">Iphone</a>
+                                </li>
+                                <li class="header__nav--item">
+                                    <a href="" class="header__nav--link">Mac</a>
+                                </li>
+                                <li class="header__nav--item">
+                                    <a href="" class="header__nav--link">Watch</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="header__nav--item">
+                            <a href="" class="header__nav--link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__buttons">
+                    <button class="button">Download</button>
+
+                    <div class="header__nav-button">
+                        <div class="header__nav-line"></div>
+                        <div class="header__nav-line"></div>
+                        <div class="header__nav-line"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+        <section></section>
+        <footer></footer>
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.header__nav-button')
+        const headerNav = document.querySelector('.header__nav')
+
+
+        menuButton.onclick = () => {
+            menuButton.classList.toggle('header__nav-button--open')
+            headerNav.classList.toggle('header__nav--small')
+        }
+    </script>
+</body>
+</html>
