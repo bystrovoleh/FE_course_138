@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+            box-shadow: 10px 14px 32px -9px rgba(0,0,0,0.75);
+            border: 1px solid;
+            border-radius: 10px;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 100px 0 100px 0;
+            font-family: sans-serif;
+        }
+
+        .sub__container{
+            display: flex;
+            gap: 10px;
+        }
+
+
+        label{
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub__container">
+                <label>
+                    Add your element
+                    <input type="text" class="inp">
+                </label>
+                <button class="btn">Check</button>
+            </div>
+            <div class="span"></div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
